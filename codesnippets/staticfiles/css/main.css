@@ -2,6 +2,8 @@
     font-size: 56px;
 }
 
+
+
 .site-header{
     height: 100px;
     border-radius: 6px;
@@ -13,17 +15,27 @@
     padding-top: 20px;
 }
 
+
+
 .divider{
     height: 5px;
 }
+
+
 
 .no-padding{
     padding: 0px;
 }
 
+.padding-5{
+    padding: 5px;
+}
+
 .no-margin{
     margin: 0px
 }
+
+
 
 .inline-display {
     display: inline-block;
@@ -33,32 +45,18 @@
     text-align: center;
 }
 
-.margin-left-10{
-    margin-left: 10px;
-}
 
-.margin-left-5{
-    margin-left: 5px;
-}
 
-.margin-right-5{
-    margin-right: 5px;
-}
 
-.margin-left-15{
-    margin-left: 15px;
-}
 
-.no-margin-left{
-    margin-left : 0px !important;
-}
 
-.border-white-2px{
-    border: solid 2px white;
+.panel-border-right{
+    border: solid 3px white;
 }
 
 .left-panel{
     height: 400px;
+    border-radius: 6px;
 }
 
 .left-panel-header{
@@ -73,11 +71,14 @@
 
 .middle-panel{
     height: 400px;
+    border-radius: 6px;
 }
 
-.padding-5{
-    padding: 5px;
-}
+
+
+
+
+
 
 .btn-label{
     font-size: 14px;
