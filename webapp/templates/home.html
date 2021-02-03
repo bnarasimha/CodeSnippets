@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %} Code Snippets {% endblock title %}
+{% block body %}
+
+<div class="container no-padding">
+    <div class="divider"></div>
+
+    <div class="row no-margin">
+
+        <div class="col-md-3 no-padding border-white-2px">
+            
+            <div class="left-panel bg-dark no-margin text-white">
+                <div class="row left-panel-header">
+                    <div class="col ">Labels</div>
+                </div> 
+                <div class="row no-margin padding-5">       
+                    {% for label in codesnippetlabels %}
+                        <button class="btn-label">{{ label.name }}</button>
+                    {% endfor %}             
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-9 no-padding border-white-2px">
+            <table class="middle-panel table table-dark no-margin">
+                <thead>
+                    <tr>
+                        <th scope="col">Language</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for codesnippet in codesnippets %}
+                    <tr>
+                        <td scope="col">{{ codesnippet.language.name }}</td>
+                        <td scope="col">{{ codesnippet.title }}</td>
+                        <td scope="col">{{ codesnippet.codesnippet }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>                 
+            </table>
+        </div>
+        <!-- <div class="col-md-3 bg-dark">
+            <div class="bg-dark">
+                Code Snippets
+            </div>
+        </div> -->
+    </div>
+</div>
+
+{% endblock body %}
